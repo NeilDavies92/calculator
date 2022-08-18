@@ -22,9 +22,9 @@ func main() {
 	case "+":
 		fmt.Printf("%f %s %f = %f", num1, operator, num2, num1+num2)
 	case "-":
-		fmt.Printf("%f %s %f = %f", num1, operator, num2, num1*num2)
+		fmt.Printf("%f %s %f = %f", num1, operator, num2, num1-num2)
 	case "*":
-		fmt.Printf("%f %s %f = %f", num1, operator, num2, num1+num2)
+		fmt.Printf("%f %s %f = %f", num1, operator, num2, num1*num2)
 	case "/":
 		if num2 == 0 {
 			fmt.Print("Divide by 0 is not possible")
