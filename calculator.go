@@ -18,4 +18,18 @@ func main() {
 	fmt.Print("Please enter an opperator: ")
 	fmt.Scanln(&opperator)
 
+	switch opperator {
+	case "+":
+		fmt.Printf("%f %s %f = %f", num1, opperator, num2, num1+num2)
+	case "-":
+		fmt.Printf("%f %s %f = %f", num1, opperator, num2, num1*num2)
+	case "*":
+		fmt.Printf("%f %s %f = %f", num1, opperator, num2, num1+num2)
+	case "/":
+		if num2 == 0 {
+			fmt.Print("Divide by 0 is not possible")
+		} else {
+			fmt.Printf("%f %s %f = %f", num1, opperator, num2, num1/num2)
+		}
+	}
 }
